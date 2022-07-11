@@ -8,6 +8,14 @@ const edge_w = 100;
 const edge_h = 150;
 const levels = 6;
 const color = new THREE.Color("rgb(153,90,0)");
+
+
+// TODO: Convert Cubes to brown. Add them in order of Pythogaras Three
+// TODO: Add Tailwind with scss
+// TODO: Remove main page and replace with three
+
+
+
 const isServer = typeof window === "undefined";
 function Box(props) {
   // This reference gives us direct access to the THREE.Mesh object
@@ -130,7 +138,8 @@ function Thing() {
     )
   }
 export default function Example() {
-  return (
+  return ( 
+    // FIXME: Add body margin and full width
     <div style={{height: '100vh', width: '100vw'}}>
     <Canvas>
         {/* <PerspectiveCamera makeDefault  /> */}
