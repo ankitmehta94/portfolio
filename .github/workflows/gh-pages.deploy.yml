@@ -2,12 +2,12 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches: [master]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-env:
+  env:
       NEXT_PUBLIC_BASE_PATH: /portfolio
 
     strategy:
